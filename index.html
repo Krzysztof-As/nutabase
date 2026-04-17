@@ -2,33 +2,45 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>NutaBase - Zielony Ekran</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutaBase - Twoja Muzyka</title>
     <style>
-        /* Stylizujemy wygląd strony */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
             font-family: Arial, sans-serif;
+            overflow: hidden;
         }
 
-        /* Tworzymy zielone tło na cały ekran */
-        .background {
-            background-color: #2ecc71; /* Przyjemna zieleń */
+        .main-container {
+            background-image: url('tlo_nutabase.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             height: 100vh;
             width: 100vw;
-            display: flex;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* Stylizujemy przycisk wyjścia */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 60px; 
+            width: auto;
+        }
+
         .exit-button {
             position: absolute;
             top: 20px;
             right: 20px;
             padding: 10px 20px;
-            background-color: #e74c3c; /* Czerwony kolor */
+            background-color: #e74c3c;
             color: white;
             border: none;
             border-radius: 5px;
@@ -38,20 +50,21 @@
         }
 
         .exit-button:hover {
-            background-color: #c0392b; /* Ciemniejszy czerwony po najechaniu */
+            background-color: #c0392b;
         }
     </style>
 </head>
 <body>
 
-    <div class="background">
+    <div class="main-container">
+        <img src="logo_nutabase.png" class="logo" alt="Logo NutaBase">
+
         <button class="exit-button" onclick="exitApp()">Wyjdź</button>
     </div>
 
     <script>
-        // Funkcja, która wykona się po kliknięciu
         function exitApp() {
-            alert("Dziękujemy za wizytę w NutaBase! (W prawdziwej aplikacji tutaj nastąpiłoby zamknięcie lub wylogowanie)");
+            alert("Dziękujemy za wizytę w NutaBase!");
         }
     </script>
 
