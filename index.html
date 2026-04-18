@@ -3,70 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutaBase - Twoja Muzyka</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-
-        .main-container {
-            background-image: url('tlo_nutabase.jpg'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            width: 100vw;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            height: 60px; 
-            width: auto;
-        }
-
-        .exit-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .exit-button:hover {
-            background-color: #c0392b;
-        }
-    </style>
+    <title>NutaBase | Giełda Hitów</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="main-container">
-        <img src="logo_nutabase.png" class="logo" alt="Logo NutaBase">
+    <section id="secure-zone">
+        <h1>NutaBase [SECURE]</h1>
+        <p>Chroń swój utwór przed plagiatem i kradzieżą. 500 PLN / utwór.</p>
+        <button onclick="window.location.href='mailto:secure@nutabase.pl'">ZABEZPIECZ UTWÓR</button>
+    </section>
 
-        <button class="exit-button" onclick="exitApp()">Wyjdź</button>
-    </div>
+    <section id="watch-zone">
+        <h2>Oglądaj Viralowe Hity</h2>
+        <div class="social-links">
+            <a href="TWÓJ_LINK_DO_TIKTOKA">TIKTOK</a>
+            <a href="TWÓJ_LINK_DO_YT">YOUTUBE</a>
+        </div>
+    </section>
 
-    <script>
-        function exitApp() {
-            alert("Dziękujemy za wizytę w NutaBase!");
-        }
-    </script>
+    <section id="market-zone">
+        <h2>Giełda: Sobota 21:00</h2>
+        <div id="active-bids">
+            <p>Oczekiwanie na najbliższą sesję licytacyjną...</p>
+        </div>
+    </section>
 
 </body>
 </html>
